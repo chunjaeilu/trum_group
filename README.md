@@ -1,4 +1,5 @@
 # THE TRAUM(트라움그룹)
+22.10.28(금) ~
 
 URl : https://chunjaeilu.github.io/trum_group/
 
