@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Red+Hat+Display:wght@700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.gnb .depth1 > li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-title .title-txt h1 {
+  font-family: "Red Hat Display";
+}
+
+/* 타이틀라인 애니메이션 */
+.main-title .title-txt .line .line-orange {
+  animation: line-orange 6s infinite linear both;
+}
+
+@keyframes line-orange {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

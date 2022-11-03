@@ -1,0 +1,252 @@
+/* #### web.css #### */
+.mob-only {
+  display: none;
+}
+.web-none {
+  display: none;
+}
+
+/* header */
+header {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  /* outline: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 2;
+  position: fixed;
+  background: #fff;
+  border-bottom: 0.2px solid #ddd;
+}
+
+.gnb {
+  height: 100%;
+}
+
+.gnb .depth1 > li {
+  width: 140px;
+  height: 100%;
+  /* outline: 1px solid yellow; */
+  position: relative;
+}
+.gnb .depth1 > li > a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 90px;
+}
+
+/* depth2 메뉴 */
+.gnb .depth2 {
+  height: 0;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  z-index: 2;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.gnb .depth1::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  transition: 0.2s;
+  z-index: -1;
+}
+.gnb .depth1:hover::after {
+  height: 280px;
+}
+
+.gnb .depth1:hover .depth2 {
+  height: 280px;
+  flex-direction: column;
+}
+
+.gnb .depth2 a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.gnb a:hover {
+  font-weight: 700;
+  color: #800080;
+}
+
+.gnb .depth1 > li::before {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #800080;
+  position: absolute;
+  top: 88px;
+  transition: 0.5s;
+}
+.gnb .depth1 > li:hover::before {
+  width: 65px;
+}
+
+/* title */
+.main-title {
+  max-width: 100%;
+  min-width: 100%;
+  height: 95vh;
+  /* outline: 1px solid blue; */
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+.main-title .title-txt {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+.main-title .title-txt h1 {
+  font-size: 4.5rem;
+  color: #fff;
+  line-height: 1em;
+  padding-left: 70px;
+}
+.main-title .title-txt .line {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  padding-right: 80px;
+}
+.main-title .title-txt .line .line-orange {
+  width: 100%;
+  height: 100%;
+  background: #fac120;
+}
+.main-title .title-txt p {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 20px;
+  padding-left: 70px;
+}
+.main-title .title-img-web {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* contents_1 */
+.contents_1 {
+  width: 100%;
+  text-align: center;
+  padding: 150px 40px;
+  /* outline: 1px solid #fac120; */
+}
+
+.contents_1 > h2 {
+  font-size: 3.56rem;
+}
+
+.contents_1 h2 span {
+  position: relative;
+}
+.contents_1 .yel::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #fac120;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  z-index: -1;
+}
+
+.contents_1 > p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  line-height: 2em;
+}
+
+.contents_1 > p > .bold {
+  font-weight: 700;
+}
+.contents_1 .content-box {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* outline: 1px solid blue; */
+}
+
+.contents_1 .content-box .box {
+  width: 25%;
+  height: 100%;
+  /* outline: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ccc;
+}
+.contents_1 > .content-box > .box:last-child {
+  border-right: none;
+}
+
+.contents_1 .box img {
+  width: 64px;
+}
+
+.contents_1 .box .caption {
+  font-size: 1.44rem;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+.contents_1 .box:hover > .caption {
+  color: #800080;
+}
+
+.contents_1 .box .link-more {
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  color: #800080;
+  transition: 0.5s;
+  position: relative;
+  left: -15px;
+}
+.contents_1 .box .link-more::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: rgba(80, 00, 80, 0.5);
+  position: absolute;
+  left: 73px;
+  top: 3px;
+}
+
+.contents_1 .box .link-more::after {
+  content: "";
+  width: 50px;
+  height: 20px;
+  background-image: url(../images/p_btn.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 65px;
+  top: 8px;
+  transition: 0.5s;
+}
+
+.contents_1 .box:hover .link-more {
+  height: 1.5em;
+  overflow: visible;
+}
+
+.contents_1 .box .link-more:hover::after {
+  transform: translate(18px, 0);
+}
+
+/* contents_2 */
