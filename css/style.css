@@ -8,15 +8,20 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .container {
-  width: 100%;
-  max-width: 1900px;
+  width: 100vw;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 
 nav ul {
@@ -46,6 +51,6 @@ a {
     width: 0;
   }
   to {
-    width: 100%;
+    width: calc(100%);
   }
 }
