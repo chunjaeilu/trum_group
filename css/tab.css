@@ -29,6 +29,7 @@ header {
 .main-title {
   width: 100%;
   height: 85vh;
+  max-height: 700px;
   /* outline: 1px solid blue; */
   padding: 0 40px;
   position: relative;
@@ -60,9 +61,14 @@ header {
   margin-top: 20px;
   padding-left: 50px;
 }
+
+.main-title .img-box {
+  width: 100%;
+  height: 100%;
+}
 .main-title .title-img-web {
   width: 100%;
-  height: 85vh;
+  height: 100%;
   display: flex;
   object-fit: cover;
   object-position: bottom;
@@ -74,6 +80,7 @@ header {
   text-align: center;
   padding: 150px 40px;
   /* outline: 1px solid #fac120; */
+  position: relative;
 }
 
 .contents_1 > h2 {
@@ -186,6 +193,7 @@ header {
 .contents_2 {
   width: 100vw;
   height: 100vh;
+  max-height: 900px;
 }
 .contents_2 .bm-list {
   width: 100%;
@@ -205,6 +213,8 @@ header {
   padding: 50px;
   color: white;
   background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contents_2 .bm-list li:first-child {
@@ -405,4 +415,47 @@ header {
 }
 .contents_3 .btn.news_next {
   transform: rotate(45deg);
+}
+
+/* contents_4 */
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 70px 40px;
+  background: #000;
+  position: relative;
+  color: #fff;
+}
+footer .footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .footer_box:first-child {
+  margin-bottom: 130px;
+}
+footer .footer_menu {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_menu a {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .footer_logo {
+  width: 198px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+footer .sns_box {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
 }

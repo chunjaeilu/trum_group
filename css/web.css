@@ -512,3 +512,46 @@ header {
 .contents_3 .btn.news_next {
   transform: rotate(45deg);
 }
+
+/* contents_4 */
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 70px 40px;
+  background: #000;
+  position: relative;
+  color: #fff;
+}
+footer .footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .footer_box:first-child {
+  margin-bottom: 130px;
+}
+footer .footer_menu {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_menu a {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .footer_logo {
+  width: 198px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+footer .sns_box {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
