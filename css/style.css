@@ -1,3 +1,4 @@
+/* :::::::: 공통 스타일.css :::::::: */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Red+Hat+Display:wght@700;800;900&display=swap");
 
 * {
@@ -41,7 +42,7 @@ a {
   font-family: "Red Hat Display";
 }
 
-/* 타이틀라인 애니메이션 */
+/* ######## 타이틀 라인 애니메이션 ######## */
 .main-title .title-txt .line .line-orange {
   animation: line-orange 6s infinite linear both;
 }

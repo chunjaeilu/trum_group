@@ -1,4 +1,4 @@
-/* #### tab.css #### */
+/* :::::::: tab.css :::::::: */
 .mob-only {
   display: none;
 }
@@ -6,7 +6,7 @@
   display: none;
 }
 
-/* header */
+/* ######## header ######## */
 header {
   display: flex;
   width: 100vw;
@@ -25,7 +25,7 @@ header {
   display: none;
 }
 
-/* title */
+/* ######## title ######## */
 .main-title {
   width: 100%;
   height: 85vh;
@@ -74,7 +74,7 @@ header {
   object-position: bottom;
 }
 
-/* contents_1 */
+/* ######## contents_1 ######## */
 .contents_1 {
   width: 100%;
   text-align: center;
@@ -188,7 +188,7 @@ header {
   transform: translate(18px, 0);
 }
 
-/* contents_2 */
+/* ######## contents_2 ######## */
 
 .contents_2 {
   width: 100vw;
@@ -273,12 +273,11 @@ header {
   transform: translate(20px, 0);
 }
 
-/* contents_3 */
+/* ######## contents_3 ######## */
 .contents_3 {
   width: 100vw;
-  height: 100vh;
   text-align: center;
-  padding: 70px 40px 20px;
+  padding: 70px 40px;
   position: relative;
 }
 
@@ -302,32 +301,23 @@ header {
 
 .contents_3 .news_list {
   width: 80vw;
-  height: 399px;
+  height: 450px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: left;
-  /* background: #ccc; */
   overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .contents_3 .news_list li {
   display: inline-block;
-  width: calc((100% - 40px) / 2);
-  height: 399px;
-  /* outline: 1px solid red; */
+  width: calc((100% - 20px) / 2);
+  height: 450px;
   border-top: 1px solid #800080;
-}
-.contents_3 .news_list li:nth-child(1) {
-  margin-right: 20px;
-}
-
-.contents_3 img {
-  width: 100%;
-  display: flex;
 }
 
 .contents_3 .news_box .news_bm {
@@ -374,13 +364,17 @@ header {
 }
 
 .contents_3 .news_img {
+  width: 100%;
+  height: 270px;
   overflow: hidden;
 }
 
 .contents_3 img {
-  height: 200px;
+  width: 100%;
+  height: 100%;
   transition: 0.4s;
-  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contents_3 .news_img:hover {
@@ -393,16 +387,14 @@ header {
 
 .contents_3 .btn_box {
   width: 90vw;
-  height: 399px;
+  height: 450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 auto; */
   position: absolute;
   top: 152px;
   left: calc(50%);
   transform: translateX(-50%);
-  /* outline: 1px solid red; */
 }
 .contents_3 .btn {
   width: 30px;
@@ -417,9 +409,98 @@ header {
   transform: rotate(45deg);
 }
 
-/* contents_4 */
+/* ######## contents_4 ######## */
+.contents_4 {
+  background-image: url(../images/bottom_banner_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  height: 360px;
+  position: relative;
+}
+.contents_4 .bottom_banner {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+  color: #fff;
+}
 
-/* footer */
+.contents_4 .bottom_banner:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contents_4 h2 .yel {
+  position: relative;
+  font-size: 1.77rem;
+  z-index: 1;
+}
+.contents_4 .yel::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fac120;
+  position: absolute;
+  top: 2px;
+  left: -8px;
+  z-index: -1;
+}
+
+.contents_4 a {
+  color: #fff;
+}
+
+.contents_4 .link-more {
+  position: relative;
+  left: -20px;
+  height: 20px;
+}
+
+.contents_4 .link_more_wrap {
+  width: 200px;
+  display: flex;
+}
+
+.contents_4 .link_more_wrap a {
+  width: 50%;
+}
+
+.contents_4 .link_more_wrap a .link-more {
+  left: 0px;
+}
+
+.contents_4 .link-more::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: -40px;
+  top: 2px;
+}
+
+.contents_4 .link-more::after {
+  content: "";
+  width: 25px;
+  height: 20px;
+  background-image: url(../images/more.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -33px;
+  top: 8px;
+  transition: 0.5s;
+}
+.contents_4 .link-more:hover::after {
+  transform: translate(20px, 0);
+}
+
+/* ######## footer ########*/
 footer {
   width: 100%;
   padding: 70px 40px;
