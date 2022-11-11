@@ -6,7 +6,14 @@ URl : https://chunjaeilu.github.io/trum_group/
 
 ### 프로젝트 목표 (완료)
 - 반응형 페이지 (web, tab, mob)
+  - 미디어 분기점에 반응하는 레이아웃 변화
 - 메인페이지 효과 및 이벤트 구현
+  - GNB depth2 전체 슬라이드
+  - 타이틀배너 반복 애니메이션
+  - section1 호버효과
+  - section2 ::web:: 리스트 호버시 배경이미지 전환효과(jQ)
+  - section2 ::tab::, ::mob:: 페이지 슬라이드 효과(jQ)
+  - section3 [<]/[>] 버튼에 반응하는 리스트 전환 효과 (jQ)
 - 활용언어 : HTML, CSS, JavaScript(jQuery)
 
 ---
@@ -22,5 +29,5 @@ URl : https://chunjaeilu.github.io/trum_group/
   - 미디어쿼리 분기점에 반응하는 폰트스타일 정리
 - 추가학습 필요
   - 클릭&드래그에 반응하는 슬라이드
-  - 마우스 스크롤 이벤트에 반응하는 애니메이션
+  - 마우스 스크롤 이벤트에 반응하는 페이지 전환
   - 화면 로딩시 svg 스트로크 애니메이션
