@@ -31,11 +31,15 @@ header {
 .gnb {
   height: 100%;
 }
+.gnb .depth1 {
+  height: 90px;
+}
 
 .gnb .depth1 > li {
   width: 140px;
-  height: 90px;
+  height: 100%;
   position: relative;
+  padding-left: 20px;
 }
 .gnb .depth1 > li > a {
   font-size: 16px;
