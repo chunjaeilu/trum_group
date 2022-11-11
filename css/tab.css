@@ -194,17 +194,19 @@ header {
   width: 100vw;
   height: 100vh;
   max-height: 900px;
+  overflow: hidden;
+  position: relative;
 }
 .contents_2 .bm-list {
-  width: 100%;
+  width: calc(100vw * 4);
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   height: 100%;
+  transition: 0.5s;
 }
 
 .contents_2 .bm-list li {
-  width: 50%;
+  width: 50vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -271,6 +273,31 @@ header {
 }
 .contents_2 .link-more:hover::after {
   transform: translate(20px, 0);
+}
+
+.contents_2 .slide-btn.tab-only {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contents_2 .slide-btn.tab-only button {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  border: none;
+}
+
+.contents_2 .slide-btn.tab-only button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.contents_2 .slide-btn.tab-only button.active {
+  background: rgba(255, 255, 255, 1);
 }
 
 /* ######## contents_3 ######## */

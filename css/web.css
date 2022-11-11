@@ -1,10 +1,14 @@
 /* :::::::: web.css :::::::: */
-.mob-only {
-  display: none;
-}
 .web-none {
   display: none;
 }
+.mob-only {
+  display: none;
+}
+.tab-only {
+  display: none;
+}
+
 .container {
   max-width: 1900px;
 }

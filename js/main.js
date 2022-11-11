@@ -24,3 +24,25 @@ $(function () {
     $(".contents_3 li:first").appendTo(".contents_3 > .news_list");
   });
 });
+
+/* :: tab & mob :: contents_2 슬라이드 버튼 */
+
+$(function () {
+  let tab_width = 50;
+  $(".contents_2 .slide-btn.tab-only button").on("click", function () {
+    num = $(this).index();
+    x = num * tab_width;
+    $(".contents_2 .bm-list").css("transform", `translateX(${-x}vw)`);
+    $(".contents_2 .slide-btn.tab-only button").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  let mob_width = 100;
+  $(".contents_2 .slide-btn.mob-only button").on("click", function () {
+    num = $(this).index();
+    x = num * mob_width;
+    $(".contents_2 .bm-list").css("transform", `translateX(${-x}vw)`);
+    $(".contents_2 .slide-btn.mob-only button").removeClass("active");
+    $(this).addClass("active");
+  });
+});
