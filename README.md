@@ -1,7 +1,7 @@
 # THE TRAUM(트라움그룹)
 22.10.28(금) ~
 
-URl : https://chunjaeilu.github.io/trum_group/
+URL : https://chunjaeilu.github.io/trum_group/
 ## 개인 프로젝트 :: 홈페이지 따라하기_01
 
 ### 프로젝트 목표 (완료)
