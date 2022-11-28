@@ -6,12 +6,17 @@
   display: none;
 }
 
+body {
+  padding-top: 90px;
+}
+
 /* ######## header ######## */
 header {
   display: flex;
   width: 100vw;
   height: 90px;
   position: fixed;
+  top: 0;
   /* outline: 1px solid red; */
   justify-content: space-between;
   align-items: center;
@@ -20,9 +25,87 @@ header {
   z-index: 100;
   background-color: #fff;
 }
-.gnb {
+header .gnb {
   height: 100%;
   display: none;
+}
+
+/* ######## site-map ######## */
+#site-map {
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  padding: 0 40px;
+}
+
+#site-map .header-cover {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#site-map .site-map-close img {
+  width: 24px;
+}
+
+#site-map .gnb .depth1 {
+  /* outline: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+#site-map .gnb .depth1::after {
+  content: "";
+  width: 100vw;
+  height: 0.1px;
+  background: #800080;
+  position: absolute;
+  top: 190px;
+  left: 0;
+}
+
+#site-map .gnb .depth1 > li {
+  vertical-align: top;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+#site-map .gnb .depth1 > li > a {
+  color: #800080;
+}
+
+#site-map .gnb .depth2 {
+  margin-top: 30px;
+}
+
+#site-map .gnb .depth2 > li {
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+/* site-map 전환 */
+#site-map {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#site-map.show {
+  height: 100vh;
+  overflow: visible;
+  opacity: 1;
 }
 
 /* ######## title ######## */

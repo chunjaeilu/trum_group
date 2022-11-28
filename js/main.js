@@ -1,6 +1,26 @@
 /* main.js */
 $(function () {
   // ########################################## //
+  /* site-map 전환 */
+  $("header .site-map-toggle").on("click", function () {
+    $("#site-map").toggleClass("show");
+  });
+
+  $("#site-map .site-map-close").on("click", function () {
+    $("#site-map .gnb .depth1 > li").removeClass("max400");
+    $("#site-map").removeClass("show");
+  });
+
+  // ########################################## //
+  /* :: mob :: site-map 2depth 메뉴 */
+  // $("#site-map .gnb .depth1 > li > a").on("click", function (event) {
+  //   $("#site-map .gnb .depth1 > li").not(this).parent().removeClass("max400");
+  //   $(this).parent().toggleClass("max400");
+  //   event.preventDefault();
+  //   event.stopPropagation();
+  // });
+
+  // ########################################## //
   /* :: web :: contents_2 bg_img 전환 */
   let bgEl = [
     "images/contents_2_bg_1.jpg",

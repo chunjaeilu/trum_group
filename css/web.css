@@ -9,10 +9,9 @@
   display: none;
 }
 
-.container {
-  max-width: 1900px;
+body {
+  padding-top: 90px;
 }
-
 /* ######## header ######## */
 header {
   display: flex;
@@ -24,24 +23,25 @@ header {
   padding: 0 40px;
   z-index: 100;
   position: fixed;
+  top: 0;
   background: #fff;
   border-bottom: 0.2px solid #ddd;
 }
 
-.gnb {
+header .gnb {
   height: 100%;
 }
-.gnb .depth1 {
+header .gnb .depth1 {
   height: 90px;
 }
 
-.gnb .depth1 > li {
+header .gnb .depth1 > li {
   width: 140px;
   height: 100%;
   position: relative;
   padding-left: 20px;
 }
-.gnb .depth1 > li > a {
+header .gnb .depth1 > li > a {
   font-size: 16px;
   font-weight: 500;
   line-height: 90px;
@@ -49,14 +49,14 @@ header {
 }
 
 /* depth2 메뉴 */
-.gnb .depth2 {
+header .gnb .depth2 {
   height: 0;
   margin-top: 20px;
   overflow: hidden;
   z-index: 2;
   transition: 0.2s;
 }
-.gnb .depth1::after {
+header .gnb .depth1::after {
   content: "";
   width: 100%;
   height: 0;
@@ -67,27 +67,27 @@ header {
   transition: 0.2s;
   z-index: -1;
 }
-.gnb .depth1:hover::after {
+header .gnb .depth1:hover::after {
   height: 280px;
 }
 
-.gnb .depth1:hover .depth2 {
+header .gnb .depth1:hover .depth2 {
   height: 260px;
   flex-direction: column;
 }
 
-.gnb .depth2 a {
+header .gnb .depth2 a {
   font-size: 15px;
   font-weight: 400;
   line-height: 40px;
 }
 
-.gnb a:hover {
+header .gnb a:hover {
   font-weight: 700;
   color: #800080;
 }
 
-.gnb .depth1 > li::before {
+header .gnb .depth1 > li::before {
   content: "";
   width: 0px;
   height: 2px;
@@ -96,8 +96,87 @@ header {
   top: 88px;
   transition: 0.5s;
 }
-.gnb .depth1 > li:hover::before {
+header .gnb .depth1 > li:hover::before {
   width: 65px;
+}
+
+/* ######## site-map ######## */
+#site-map {
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  padding: 0 40px;
+}
+
+#site-map .header-cover {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#site-map .site-map-close img {
+  width: 24px;
+}
+
+#site-map .gnb .depth1 {
+  /* outline: 1px solid red; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  height: 90px;
+}
+
+#site-map .gnb .depth1::after {
+  content: "";
+  width: 100vw;
+  height: 0.1px;
+  background: #800080;
+  position: absolute;
+  top: 190px;
+  left: 0;
+}
+
+#site-map .gnb .depth1 > li {
+  vertical-align: top;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+#site-map .gnb .depth1 > li > a {
+  color: #800080;
+}
+
+#site-map .gnb .depth2 {
+  margin-top: 30px;
+}
+
+#site-map .gnb .depth2 > li {
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+/* site-map 전환 */
+#site-map {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#site-map.show {
+  height: 100vh;
+  overflow: visible;
+  opacity: 1;
 }
 
 /* ######## title ######## */
