@@ -14,11 +14,11 @@ URL : https://chunjaeilu.github.io/trum_group/
   - section2 ::web:: 리스트 호버시 배경이미지 전환효과(jQ)
   - section2 ::tab::, ::mob:: 페이지 슬라이드 효과(jQ)
   - section3 [<]/[>] 버튼에 반응하는 리스트 전환 효과 (jQ)
+  - 사이트맵 토글 기능
 - 활용언어 : HTML, CSS, JavaScript(jQuery)
 
 ---
 #### 미구현
-- 사이트맵 토글 기능
 - 서브페이지 2개 정도 구현
 
 ---
