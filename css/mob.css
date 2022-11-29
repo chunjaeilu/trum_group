@@ -124,7 +124,7 @@ header .gnb {
 #site-map .gnb .depth1 > li {
   max-height: 50px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 #site-map .gnb .depth1 > li:hover {
