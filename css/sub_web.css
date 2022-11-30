@@ -43,9 +43,14 @@ header {
   border-bottom: 0.2px solid #ddd;
 }
 
+header h1 {
+  height: 100%;
+}
+
 header .gnb {
   height: 100%;
 }
+
 header .gnb .depth1 {
   height: 90px;
 }
@@ -224,26 +229,33 @@ header .gnb .depth1 > li.active::before {
 }
 
 .breadcrumb .crumb-list li {
+  color: #777;
   font-size: 14px;
+}
+
+.breadcrumb .crumb-list li b {
+  color: #000;
 }
 
 /* ######## sub-title ######## */
 .sub-title {
   max-width: 1440px;
   margin: 0 auto;
-  position: relative;
 }
 .sub-title h1 {
   padding: 15px 0 100px;
 }
 
+.sub-title .sub-title-img {
+  position: relative;
+}
 .sub-title .sub-title-img::after {
   content: "";
   width: 112px;
   height: 112px;
   background: rgba(250, 193, 32, 0.8);
   position: absolute;
-  top: 120px;
+  top: -56px;
   right: 0px;
 }
 
@@ -395,7 +407,7 @@ footer .sns_box {
 
 #sub1-2 .section2 .ph-list2 p {
   font-size: 18px;
-  color: #333;
+  color: #666;
   word-break: keep-all;
   line-height: 1.88rem;
   letter-spacing: -0.05em;

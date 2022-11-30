@@ -12,6 +12,23 @@
 body {
   padding-top: 65px;
 }
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
 /* ######## header ######## */
 header {
   display: flex;
@@ -131,17 +148,62 @@ header .gnb {
   max-height: 400px;
 }
 
+/* ######## main ######## */
+
 /* ######## breadcrumb ######## */
 .breadcrumb {
-  width: 100%;
   height: 60px;
+  padding: 0 14px;
 }
 
 .breadcrumb .crumb-list {
   list-style-type: none;
-  width: 100%;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb .crumb-list li {
+  color: #777;
+  font-size: 14px;
+}
+
+.breadcrumb .crumb-list li b {
+  color: #000;
+}
+
+/* ######## sub-title ######## */
+.sub-title {
+  width: 100vw;
+  padding: 0 14px;
+  overflow: hidden;
+}
+.sub-title h1 {
+  padding: 15px 0 30px;
+}
+
+.sub-title .sub-title-img {
+  width: 100vw;
+  position: relative;
+  height: 212px;
+}
+
+.sub-title .sub-title-img::after {
+  content: "";
+  width: 56px;
+  height: 56px;
+  background: rgba(250, 193, 32, 0.8);
+  position: absolute;
+  top: -28px;
+  right: 28px;
+}
+
+.sub-title .sub-title-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ######## footer ######## */
@@ -191,4 +253,121 @@ footer .sns_box {
 
 footer .sns_box > img {
   width: 32px;
+}
+
+/* 페이지 게별 스타일 */
+
+/* :::::: sub1-2 :::::: */
+/* ######## section1 ######## */
+#sub1-2 .section1 {
+  width: 100vw;
+  padding: 60px 14px;
+}
+
+#sub1-2 .section1 h2 {
+  margin-bottom: 70px;
+  position: relative;
+  word-break: keep-all;
+}
+
+#sub1-2 .section1 h2::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fac120;
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  z-index: -1;
+}
+
+#sub1-2 .section1 .ph-list {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#sub1-2 .section1 .ph-list li {
+  flex: 1;
+  height: 100%;
+  color: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+#sub1-2 .section1 .ph-list li:first-child {
+  background: #800080;
+}
+#sub1-2 .section1 .ph-list li:nth-child(2) {
+  background: #1268b3;
+}
+#sub1-2 .section1 .ph-list li:last-child {
+  background: #c39e53;
+}
+
+#sub1-2 .section1 .ph-list li h3 {
+  font-family: "Red Hat Display";
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#sub1-2 .section1 .ph-list li p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#sub1-2 .section1 .ph-list li img {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+/* ######## section2 ######## */
+#sub1-2 .section2 {
+  width: 100%;
+  padding: 60px 14px;
+}
+
+#sub1-2 .section2 .wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sub1-2 .section2 h2 {
+  width: 100%;
+  letter-spacing: -0.05em;
+  word-break: keep-all;
+  margin-bottom: 60px;
+}
+
+#sub1-2 .section2 .ph-list2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sub1-2 .section2 .ph-list2 li {
+  width: 100%;
+  padding: 20px 0 40px;
+  border-top: 1px solid #000;
+}
+
+#sub1-2 .section2 .ph-list2 h3 {
+  margin: 12px 0;
+  word-break: keep-all;
+}
+
+#sub1-2 .section2 .ph-list2 p {
+  font-size: 14px;
+  color: #666;
+  word-break: keep-all;
+  line-height: 1.7rem;
+  letter-spacing: -0.05em;
 }

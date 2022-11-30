@@ -7,7 +7,24 @@
 }
 
 body {
+  font-family: "noto sans kr", sans-serif;
   padding-top: 90px;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 14px;
 }
 
 /* ######## header ######## */
@@ -25,6 +42,17 @@ header {
   z-index: 100;
   background-color: #fff;
 }
+
+header h1 {
+  height: 100%;
+}
+
+header h1 a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 header .gnb {
   height: 100%;
   display: none;
@@ -108,6 +136,56 @@ header .gnb {
   opacity: 1;
 }
 
+/* ######## main ######## */
+
+/* ######## breadcrumb ######## */
+.breadcrumb {
+  height: 60px;
+  padding: 0 40px;
+}
+
+.breadcrumb .crumb-list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb .crumb-list li {
+  color: #777;
+  font-size: 14px;
+}
+
+.breadcrumb .crumb-list li b {
+  color: #000;
+}
+
+/* ######## sub-title ######## */
+.sub-title {
+  width: 100vw;
+  padding: 0 40px;
+  overflow: hidden;
+}
+.sub-title h1 {
+  padding: 15px 0 80px;
+}
+
+.sub-title .sub-title-img {
+  position: relative;
+}
+
+.sub-title .sub-title-img::after {
+  content: "";
+  width: 112px;
+  height: 112px;
+  background: rgba(250, 193, 32, 0.8);
+  position: absolute;
+  top: -56px;
+  right: 0px;
+}
+
 /* ######## footer ########*/
 footer {
   width: 100%;
@@ -147,4 +225,115 @@ footer .sns_box {
   width: 170px;
   display: flex;
   justify-content: space-between;
+}
+
+/* 페이지 게별 스타일 */
+
+/* :::::: sub1-2 :::::: */
+/* ######## section1 ######## */
+#sub1-2 .section1 {
+  width: 100vw;
+  padding: 90px 40px;
+}
+
+#sub1-2 .section1 h2 {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+#sub1-2 .section1 h2::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #fac120;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  z-index: -1;
+}
+
+#sub1-2 .section1 .ph-list {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#sub1-2 .section1 .ph-list li {
+  flex: 1;
+  height: 100%;
+  color: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+#sub1-2 .section1 .ph-list li:first-child {
+  background: #800080;
+}
+#sub1-2 .section1 .ph-list li:nth-child(2) {
+  background: #1268b3;
+}
+#sub1-2 .section1 .ph-list li:last-child {
+  background: #c39e53;
+}
+
+#sub1-2 .section1 .ph-list li h3 {
+  font-family: "Red Hat Display";
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#sub1-2 .section1 .ph-list li p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#sub1-2 .section1 .ph-list li img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* ######## section2 ######## */
+#sub1-2 .section2 {
+  width: 100vw;
+  padding: 90px 40px 40px;
+}
+
+#sub1-2 .section2 .wrap {
+  width: 100%;
+  display: flex;
+}
+
+#sub1-2 .section2 h2 {
+  width: 30%;
+  letter-spacing: -0.05em;
+  word-break: keep-all;
+}
+
+#sub1-2 .section2 .ph-list2 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+}
+
+#sub1-2 .section2 .ph-list2 li {
+  width: 50%;
+  padding: 30px 50px 70px 0;
+  border-top: 1px solid #000;
+}
+
+#sub1-2 .section2 .ph-list2 h3 {
+  margin: 17px 0 23px;
+  word-break: keep-all;
+}
+
+#sub1-2 .section2 .ph-list2 p {
+  font-size: 16px;
+  color: #666;
+  word-break: keep-all;
+  line-height: 1.7rem;
+  letter-spacing: -0.05em;
 }
