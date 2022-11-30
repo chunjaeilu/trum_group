@@ -20,6 +20,7 @@ URL : https://chunjaeilu.github.io/trum_group/
 ---
 #### 미구현
 - 서브페이지 2개 정도 구현
+- 스크롤 반응 애니메이션 구현
 
 ---
 #### 프로젝트 후기 및 향후 학습방향
