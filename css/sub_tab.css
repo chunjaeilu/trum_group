@@ -170,6 +170,7 @@ header .gnb {
 }
 .sub-title h1 {
   padding: 15px 0 80px;
+  animation: slide-up 1s ease forwards;
 }
 
 .sub-title .sub-title-img {
@@ -239,6 +240,7 @@ footer .sns_box {
 #sub1-2 .section1 h2 {
   margin-bottom: 70px;
   position: relative;
+  animation: slide-up 1s ease forwards;
 }
 
 #sub1-2 .section1 h2::before {
@@ -266,6 +268,7 @@ footer .sns_box {
   color: #fff;
   padding: 30px;
   position: relative;
+  opacity: 0;
 }
 
 #sub1-2 .section1 .ph-list li:first-child {
@@ -310,6 +313,7 @@ footer .sns_box {
   width: 30%;
   letter-spacing: -0.05em;
   word-break: keep-all;
+  opacity: 0;
 }
 
 #sub1-2 .section2 .ph-list2 {
@@ -323,6 +327,7 @@ footer .sns_box {
   width: 50%;
   padding: 30px 50px 70px 0;
   border-top: 1px solid #000;
+  opacity: 0;
 }
 
 #sub1-2 .section2 .ph-list2 h3 {
@@ -336,4 +341,48 @@ footer .sns_box {
   word-break: keep-all;
   line-height: 1.7rem;
   letter-spacing: -0.05em;
+}
+
+/* 애니메이션 효과 */
+.slide-up {
+  animation: slide-up 1s ease forwards;
+}
+.slide-left {
+  animation: slide-left 1s ease forwards;
+}
+.slide-right {
+  animation: slide-right 1s ease forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
