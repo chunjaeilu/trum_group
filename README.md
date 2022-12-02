@@ -16,7 +16,7 @@ URL : https://chunjaeilu.github.io/trum_group/
   - section2 ::tab::, ::mob:: 페이지 슬라이드 효과(jQ)
   - section3 [<]/[>] 버튼에 반응하는 리스트 전환 효과 (jQ)
   - 사이트맵 토글 기능
- - 서브페이지 효과 및 이벤트 구현
+- 서브페이지 효과 및 이벤트 구현
   - 스크롤 반응 애니메이션
 - 활용언어 : HTML, CSS, JavaScript(jQuery)
 
