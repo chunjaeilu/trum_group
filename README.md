@@ -1,5 +1,5 @@
 # THE TRAUM(트라움그룹)
-22.10.28(금) ~
+22.10.28(금) ~ 12.01(목)
 
 URL : https://chunjaeilu.github.io/trum_group/
 ## 개인 프로젝트 :: 홈페이지 따라하기_01
@@ -7,6 +7,7 @@ URL : https://chunjaeilu.github.io/trum_group/
 ### 프로젝트 목표 (완료)
 - 반응형 페이지 (web, tab, mob)
   - 미디어 분기점에 반응하는 레이아웃 변화
+- 메인페이지, 서브페이지 구현
 - 메인페이지 효과 및 이벤트 구현
   - GNB depth2 전체 슬라이드
   - 타이틀배너 반복 애니메이션
@@ -15,12 +16,9 @@ URL : https://chunjaeilu.github.io/trum_group/
   - section2 ::tab::, ::mob:: 페이지 슬라이드 효과(jQ)
   - section3 [<]/[>] 버튼에 반응하는 리스트 전환 효과 (jQ)
   - 사이트맵 토글 기능
+ - 서브페이지 효과 및 이벤트 구현
+  - 스크롤 반응 애니메이션
 - 활용언어 : HTML, CSS, JavaScript(jQuery)
-
----
-#### 미구현
-- 서브페이지 2개 정도 구현
-- 스크롤 반응 애니메이션 구현
 
 ---
 #### 프로젝트 후기 및 향후 학습방향
